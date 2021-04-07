@@ -16,7 +16,7 @@ class FloatBubble extends StatefulWidget {
   ///
   final Alignment initialAlignment;
   FloatBubble(
-      {@required this.child,
+      {required this.child,
       this.show = true,
       this.initialAlignment = Alignment.bottomRight});
 
@@ -26,8 +26,8 @@ class FloatBubble extends StatefulWidget {
 
 class FloatBubbleState extends State<FloatBubble>
     with SingleTickerProviderStateMixin {
-  Animation<Alignment> animation;
-  AnimationController controller;
+  late Animation<Alignment> animation;
+  late AnimationController controller;
   Alignment dragBeginAlignment = Alignment.bottomRight;
   Alignment dragEndAlignment = Alignment.bottomRight;
 
